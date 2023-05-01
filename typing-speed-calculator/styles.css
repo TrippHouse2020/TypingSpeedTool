@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #181B3F;
+}
+body, .quote-input {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container {
+    background-color: #3870EB;
+    padding: 1rem;
+    width: 700px;
+    max-width: 90%;
+}
+.timer {
+    position: absolute;
+    font-family: arial;
+    top: 2rem;
+    font-size: 3rem;
+    color: #3CF4D4;
+    font-weight: bold;
+    padding-right: 10vmin; 
+    padding-left: 10vmin; 
+    border: 0.5vmin solid #3CF4D4;
+}
+.quote-display {
+    margin-bottom: 1rem;
+    margin-left: calc(1rem + 2px);
+    margin-right: calc(1rem + 2px);
+    font-size: 3.5vmin; 
+    font-weight: bold;
+    font-family: 'Chivo Mono', serif;
+}
+.quote-input {
+    background-color: transparent;
+    border: 2px solid #A1922E;
+    outline: none;
+    font-family: 'Chivo Mono', serif;
+    width: 100%;
+    height: 8vmin;
+    margin: auto;
+    resize: none;
+    padding: .5rem 1rem;
+    font-size: 3.5vmin; 
+}
+.quote-input:focus {
+    border-color: black;
+}
+.correct {
+    color: #3CF4D4;
+}
+.incorrect {
+    color: #FF5398;
+    text-decoration: underline;
+}
